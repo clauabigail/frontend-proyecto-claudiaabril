@@ -15,7 +15,7 @@ const InvoiceList = ({ invoices }) => {
       <div className="">
        
 
-              <div className="font-extrabold flex justify-between bg-blue-900 text-yellow-50 flex inset-x-2 top-6 z-50 ml-4">
+              <div className="font-extrabold flex justify-between bg-blue-900 text-yellow-50 inset-x-2 top-6 z-50 ml-4">
                 <span>Codigo</span>
                 <span>Fecha de instalacion</span>
                 <span>Nombre de Equipo</span>

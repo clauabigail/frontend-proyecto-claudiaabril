@@ -53,13 +53,13 @@ const Login = () => {
     <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" h-auto w-auto ">
 
     <form className="w-96 mx-auto font-black " onSubmit={handleLogin}>
-      <h1 className="text-center text-3xl mb-8 text-white">Catálogo App - Login</h1>
+      <h1 className="text-center text-3xl mb-8 text-black">Catálogo App - Login</h1>
 
       <Toaster richColors />
 
        {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
 
-      <div className="flex flex-col gap-4 bg-slate-200 p-8 shadow-lg rounded-lg">
+      <div className="flex flex-col gap-4 text-black bg-slate-200 p-8 shadow-lg rounded-lg">
         <label className="font-medium">
           Email
           <input
