@@ -2,13 +2,13 @@ function Home() {
   return (
     <div>
     
-        <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" bg-no-repeat text-center mt-28 w-auto  sm:py-48 lg:py-56">
-        <header className=" w-auto justify-items-center  sm:py-48 lg:py-56">
-          <h1 className=" mt-0 pt-0 font-bold tracking-tight text-white sm:text-4xl ">
+        <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" bg-no-repeat text-center w-auto  sm:py-48 lg:py-56">
+        <header className="  sm:py-48 lg:py-56">
+          <h1 className="  text-white sm:text-4xl ">
                 Catalogo de partes de equipos - Concentradora SPCC
           </h1>
 
-              <p className="mt-6 text-lg leading-8 text-white text-or sm:mb-18">
+              <p className=" text-lg leading-8 text-white text-or sm:mb-18">
                         Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                         fugiat veniam occaecat fugiat aliqua.
               </p>
