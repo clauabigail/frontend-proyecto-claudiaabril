@@ -1,4 +1,4 @@
-
+import { Toaster, toast } from 'sonner'
 const CatalogoComponentes = () => {
  
   return (
@@ -24,33 +24,56 @@ const CatalogoComponentes = () => {
               
 
             </section>
-            <ul>
-                <li>
-                 <a href="">Valvula</a> 
-                </li>
-                <li>
-                  <a href="">Cilindro hidraulico</a>
-                </li>
-              </ul>
-        </aside>
 
-        
-        {/*<div class="dropdown"><li class=" even">
-          <button class="mainmenubtn">Main Menu</button><li class=" odd">
-          <div class="dropdown-child"><li class=" even">
-            <a href="http://wwww.tudominio.com/page1.html">Sub Menu 1</a>
-            <a href="http://wwww.tudominio.com/page2.html">Sub Menu 2</a>
-            <a href="http://wwww.tudominio.com/page3.html">Sub Menu 3</a>
-            <a href="http://wwww.tudominio.com/page4.html">Sub Menu 4</a>
-            <a href="http://wwww.tudominio.com/page5.html">Sub Menu 5</a>
-          </div>
-  </div>*/}
+            <div class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <a href="#" aria-current="true" class="block w-full px-4 py-2 text-white bg-blue-700 border-b border-gray-200 rounded-t-lg cursor-pointer dark:bg-gray-800 dark:border-gray-600">
+                AIR COOLER ASSEMBLY
+                </a>
+                <a href="#" class="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                AIR COOLER Y PIPING ASSY MASTER
+                </a>
+                <a href="#" class="block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                TEMPERATURE TRANSMITER ASSY
+
+                </a>
+               
+            </div>
+
+          </aside>
+
         <div class="flex inset-x-2 top-6 z-50 ml-4">
-  
-
             <div class="flex w-96  h-96 relative">
             <img src="../images/413- Parte 7 - Temperature Transmiter Assy .jpg" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
             </div>
+            <form className="w-96 mx-auto mt-28 ">
+      <h1 className="text-center text-3xl mb-8 text-black">Componente - Detalle</h1>
+
+      <Toaster richColors />
+
+      <div className="flex flex-col gap-4 bg-slate-200 p-8 shadow-lg rounded-lg">
+        <label className="font-medium">
+          Código
+          <input
+            type="email"
+            name="email"
+            placeholder="nombre@dominio.com"
+            className="border w-full p-3"
+            required
+           />
+        </label>
+        <label className="font-medium">
+          Nombre
+          <input
+            type="password"
+            name="password"
+            placeholder="Clave"
+            className="border w-full p-3"
+            required
+                      />
+        </label>
+        
+      </div>
+    </form>
 
             <div className="flex  inset-x-2 top-6 z-50 ml-4 divide-slate-100">
                   <div className=' mt-2 container flex justify-between shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)]' >

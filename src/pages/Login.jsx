@@ -41,7 +41,7 @@ const Login = () => {
       delete clonedData.password
       storeUser(clonedData)
       navigate('/')
-      
+
     } else {
       toast.error('User login error!')
     }
@@ -50,7 +50,7 @@ const Login = () => {
   }
 
   return (
-    <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" h-auto">
+    <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" h-auto w-auto">
 
     <form className="w-96 mx-auto mt-28 " onSubmit={handleLogin}>
       <h1 className="text-center text-3xl mb-8 text-white">Catálogo App - Login</h1>

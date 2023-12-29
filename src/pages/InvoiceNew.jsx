@@ -132,7 +132,7 @@ const InvoiceNew = () => {
   }
 
   return (
-    <main className="w-[740px] m-auto flex flex-col gacp-5">
+    <main className="w-[740px] m-auto flex flex-col gap-5">
       <Link
         to='/invoices'
         className="text-white font-bold flex gap-5 items-center"

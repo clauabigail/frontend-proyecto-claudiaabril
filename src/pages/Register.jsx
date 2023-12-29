@@ -52,8 +52,9 @@ const Register = () => {
   }
 
   return (
+    <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" h-auto">
     <form className="w-96 mx-auto mt-28" onSubmit={handleRegister}>
-      <h1 className="text-center text-3xl mb-8">Catalogo App - Register</h1>
+      <h1 className="text-center text-3xl mb-8 text-white">Catalogo App - Register</h1>
 
       {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
 
@@ -101,6 +102,7 @@ const Register = () => {
         />
       </div>
     </form>
+    </div>
   )
 }
 
