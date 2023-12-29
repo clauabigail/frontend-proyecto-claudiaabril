@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div div className="bg-white text-center flex-col mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+    <div style={{ backgroundImage: "url(/molino.jpg)" }} className="bg-white text-center flex-col mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
        <h1 className=" font-bold tracking-tight text-gray-900 sm:text-4xl ">
             Catalogo de partes de equipos - Concentradora SPCC

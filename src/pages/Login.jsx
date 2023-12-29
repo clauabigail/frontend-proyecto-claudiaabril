@@ -1,19 +1,13 @@
 import { useState, useContext } from "react"
-
 import { useNavigate } from 'react-router-dom'
-
 import { Toaster, toast } from 'sonner'
-
 // import useAuth from '../hooks/useAuth.js'
 import { UserContext } from '../context/UserContext'
 
 const Login = () => {
   const { storeUser } = useContext(UserContext)
-
   const navigate = useNavigate()
-
   // const { setAuth } = useAuth()
-
   const [form, setForm] = useState({
     email: '',
     password: '',
@@ -21,7 +15,6 @@ const Login = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target
-
     setForm({ ...form, [name]: value })
   }
 
@@ -31,11 +24,8 @@ const Login = () => {
     // console.log('Guardando la data del usuario...')
 
     const { email, password } = form
-
     const url = `https://657d0455853beeefdb9a3094.mockapi.io/api/v1/users?email=${email}&password=${password}`
-
     const response = await fetch(url)
-
     const data = await response.json()
 
     console.log(data)
@@ -49,10 +39,9 @@ const Login = () => {
       const clonedData = { ...data[0] }
 
       delete clonedData.password
-
       storeUser(clonedData)
-
       navigate('/')
+      
     } else {
       toast.error('User login error!')
     }
@@ -61,8 +50,10 @@ const Login = () => {
   }
 
   return (
+    <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" h-auto">
+
     <form className="w-96 mx-auto mt-28 " onSubmit={handleLogin}>
-      <h1 className="text-center text-3xl mb-8">Catálogo App - Login</h1>
+      <h1 className="text-center text-3xl mb-8 text-white">Catálogo App - Login</h1>
 
       <Toaster richColors />
 
@@ -100,6 +91,7 @@ const Login = () => {
         />
       </div>
     </form>
+    </div>
   )
 }
 
