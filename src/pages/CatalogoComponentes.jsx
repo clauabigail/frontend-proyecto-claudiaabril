@@ -92,7 +92,7 @@ const CatalogoComponentes = () => {
         </aside>
         <div className="flex">
           <div>
-          <img src="./images/379-AirCoolerPipingAssembly-maincomponent.jpg" alt="" />
+          <img src="./public/379-AirCoolerPipingAssembly-maincomponent.jpg" alt="" />
           </div>
           <div> 
 
