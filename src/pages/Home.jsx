@@ -1,17 +1,19 @@
 function Home() {
   return (
-    <section className="flex-row gap-8">
+    <section className=" grid gap-8 md:grid-cols-2 md:items-center md:text-left">
         {/*<* style={{ backgroundImage: "url(/molino.jpg)" }} className="text-center w-auto text-4xl sm:py-8 lg:py-12">*/}
-        <div >
+          <div>
           <img src="/molino.jpg" alt="" className="w-full  h-auto rounded-lg"/>
+          </div>
+          <div>
            <h1 className="text-center mb-2 font-medium text-xl  text-white sm:text-4xl ">
                 Catálogo de partes de equipos - Concentradora SPCC
           </h1>
 
               <p className="text-sm text-center leading-8 text-white text-or sm:mb-10">
                         Busqueda de equipos y componentes de Planta Concentradora Toquepala. COnsulta de numeros de parte y existencias.
-              </p>
-                      <div className="mx-auto max-w-2xl pt-10 pb-10 text-center sm:py-48 lg:py-56">
+             
+                      <div className="mx-auto max-w-2xl pt-6 pb-10 text-center ">
                         <div className=" sm:mb-8 sm:flex sm:justify-center">
                           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                           Ingreso a reporte de fallas.{' '}
@@ -22,12 +24,9 @@ function Home() {
                           </div>
                         </div>
                       </div>   
-         
-        </div>
-     
-       
-
-                 
+              </p>
+              </div>
+                     
                   {/*<div className="mt-10 flex items-center justify-center gap-x-6">
                       <a
                         href="#"
