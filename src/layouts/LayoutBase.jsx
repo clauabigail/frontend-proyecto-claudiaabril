@@ -28,7 +28,7 @@ const LayoutBase = () => {
           {/*<!-- Container wrapper -->*/}
           < div class=" bg-black flex w-full  items-center justify-between px-4 gap-4">
                   <div className='mt-4'>
-                      <img src="./images/SCCO.jpg" className='size-8' />
+                      <img src="./SCCO.jpg" className='size-8' />
                   </div>
              
               {user?.email && (
@@ -95,7 +95,7 @@ const LayoutBase = () => {
           </div>
         </div>
         {/*Notificaciones y perfil de usuario*/}
-        
+
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
             <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
