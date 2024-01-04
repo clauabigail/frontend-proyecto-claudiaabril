@@ -1,11 +1,11 @@
 function Home() {
   return (
-    <section className=" grid gap-8 md:grid-cols-2 md:items-center md:text-left">
+    <div className=" grid md:grid-cols-2 md:items-center gap-14 md:align-middle md:justify-stretch sm:my-1">
         {/*<* style={{ backgroundImage: "url(/molino.jpg)" }} className="text-center w-auto text-4xl sm:py-8 lg:py-12">*/}
-          <div>
-          <img src="/molino.jpg" alt="" className="w-full  h-auto rounded-lg"/>
+          <div className="size-92 md:items-center">
+          <img src="/molino.jpg" alt="" className=" h-auto rounded-lg size-auto md:object-center "/>
           </div>
-          <div>
+          <div className="size-auto">
            <h1 className="text-center mb-2 font-medium text-xl  text-white sm:text-4xl ">
                 Catálogo de partes de equipos - Concentradora SPCC
           </h1>
@@ -26,6 +26,9 @@ function Home() {
                       </div>   
               </p>
               </div>
+              <div className="bg-black md:w-full">
+
+              </div>
                      
                   {/*<div className="mt-10 flex items-center justify-center gap-x-6">
                       <a
@@ -39,7 +42,7 @@ function Home() {
                       </a>
                    </div>*/}
                    <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-slate-100 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-                      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023. All Rights Reserved.
+                      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023.
                       </span>
                       <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                           <li>
@@ -49,15 +52,12 @@ function Home() {
                               <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
                           </li>
                           <li>
-                              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                          </li>
-                          <li>
                               <a href="#" class="hover:underline">Contact</a>
                           </li>
                       </ul>
                   </footer>
                          
-    </section>
+    </div>
   )
 }
 

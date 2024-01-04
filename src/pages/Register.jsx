@@ -52,56 +52,59 @@ const Register = () => {
   }
 
   return (
-    <div style={{ backgroundImage: "url(/molino.jpg)" }} className=" h-auto">
-    <form className="w-96 mx-auto mt-28" onSubmit={handleRegister}>
-      <h1 className="text-center text-3xl mb-8 text-white">Catalogo App - Register</h1>
-
-      {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
-
-      <div className="flex flex-col gap-4 bg-slate-200 p-8 shadow-lg rounded-lg">
-        <label className="font-medium">
-          Full name
-          <input
-            type="text"
-            name="fullname"
-            paceholder="Jhon Doe"
-            className="border w-full p-3"
-            required
-            onChange={handleChange}
-            value={form.fullname}
-          />
-        </label>
-        <label className="font-medium">
-          Email
-          <input
-            type="text"
-            name="email"
-            paceholder="jhon_doe@budgetapp.com"
-            className="border w-full p-3"
-            required
-            onChange={handleChange}
-            value={form.email}
-          />
-        </label>
-        <label className="font-medium">
-          Password
-          <input
-            type="password"
-            name="password"
-            paceholder="Sup3rSecre3tPass"
-            className="border w-full p-3"
-            required
-            onChange={handleChange}
-            value={form.password}
-          />
-        </label>
-        <input
-          type="submit"
-          value='Register'
-          className="w-full bg-amber-400 p-3 font-medium"
-        />
+    <div className=" h-auto w-full grid md:grid-cols-2 md:items-center gap-10 md:justify-center">
+      <div>
+        <img src="./molino.jpg" alt="" />
       </div>
-    </form>
+      <form className="w-96 mx-auto mt-10 mb-10" onSubmit={handleRegister}>
+        <h1 className="text-center text-3xl mb-8 text-white">Catalogo App - Register</h1>
+
+        {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
+
+        <div className="flex flex-col gap-4 bg-slate-200 p-8 shadow-lg rounded-lg text-black">
+          <label className="font-medium">
+            Full name
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Juan Perez"
+              className="border w-full p-3"
+              required
+              onChange={handleChange}
+              value={form.fullname}
+            />
+          </label>
+          <label className="font-medium">
+            Email
+            <input
+              type="text"
+              name="email"
+              placeholder="juan_perez@dominio.com"
+              className="border w-full p-3"
+              required
+              onChange={handleChange}
+              value={form.email}
+            />
+          </label>
+          <label className="font-medium">
+            Password
+            <input
+              type="password"
+              name="password"
+              placeholder="pass"
+              className="border w-full p-3"
+              required
+              onChange={handleChange}
+              value={form.password}
+            />
+          </label>
+          <input
+            type="submit"
+            value='Register'
+            className="w-full bg-amber-400 p-3 font-medium"
+          />
+        </div>
+      </form>
     </div>
   )
 }
