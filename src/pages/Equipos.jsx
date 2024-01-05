@@ -13,8 +13,7 @@ const Equipos = () => {
 
   return (
     <>
-      <Header title='Equipos' />
-
+      
       <EquipoLista equipos={equipos} />
     </>
   )

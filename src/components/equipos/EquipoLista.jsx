@@ -52,7 +52,7 @@ const EquipoLista = ({equipos}) => {
                   }
                 </div>
                 <div className="w-10 flex justify-center">
-                  <Link to={`/equipos/${equipo.id}`}>
+                  <Link to={`/EquipoDetalle/${equipo.Id}`}>
                     <TbChevronRight />
                   </Link>
                 </div>

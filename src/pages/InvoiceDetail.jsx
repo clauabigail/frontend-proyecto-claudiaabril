@@ -1,8 +1,6 @@
 import { Link, useParams, useNavigate } from "react-router-dom"
 import Swal from 'sweetalert2'
-
 import { TbChevronLeft } from "react-icons/tb";
-
 import BaseTag from "../components/shared/BaseTag";
 import { useEffect, useState } from "react";
 import { deleteInvoice, getInvoice, updateInvoiceStatus } from "../services/invoices";
