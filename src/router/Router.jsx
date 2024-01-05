@@ -7,9 +7,9 @@ import LayoutBase from "../layouts/LayoutBase"
 
 import PrivateRoute from "./PrivateRoute"
 import { UserProvider } from "../context/UserContext"
-import NewBudget from "../pages/NewBudget"
-import CatalogoComponentes from "../pages/CatalogoComponentes"
 import ActualizarEquipo from "../pages/ActualizarEquipo"
+import Equipos from "../pages/Equipos"
+import Reporte from "../pages/Reporte"
 
 const Router = () => {
   return (
@@ -20,8 +20,9 @@ const Router = () => {
 
             <Route element={<PrivateRoute />}>
               <Route index element={<Home />} />
-              <Route path='/catalogo-componentes' element={<CatalogoComponentes />} />
-              <Route path="/actualizar-equipo" element={<ActualizarEquipo/>}/>
+              <Route path='/actualizar-equipo' element={<ActualizarEquipo />} />
+              <Route path="/equipos" element={<Equipos/>}/>
+              <Route path="/reporte" element={<Reporte/>}/>
 
             </Route>
 

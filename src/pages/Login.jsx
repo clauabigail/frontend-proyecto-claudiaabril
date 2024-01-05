@@ -50,23 +50,20 @@ const Login = () => {
   }
 
   return (
-    <div  className=" w-full grid md:grid-cols-2 md:items-center gap-10 md:justify-center">
+    <div  className=" border-t border-white h-auto w-full grid md:grid-cols-2 md:items-center gap-10 md:justify-center">
 
-       <div className="size-92 md:items-center">
+       <div className="mt-2 ">
         <img src="./molino.jpg" className="md:gap-4 h-auto rounded-lg md:size-auto" alt="" />
        </div>
       <div>
-          <div>
-          <h1 className="text-center text-3xl text-white ">Catálogo App - Login</h1>
-          </div>
-        <form className="align-center mb-24 mt-10 gap-4" onSubmit={handleLogin}>
-          
+        <form className="w-96 mx-auto mt-10 mb-10" onSubmit={handleLogin}>
+        <h1 className="text-center text-3xl mb-8 text-white">Catálogo App - Login</h1>
 
           <Toaster richColors />
 
           {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
 
-          <div className="flex flex-col gap-4 text-black bg-slate-200 p-8 shadow-lg rounded-lg">
+          <div className="flex flex-col gap-4 bg-slate-200 p-8 shadow-lg rounded-lg text-black">
             <label className="font-medium">
               Email
               <input

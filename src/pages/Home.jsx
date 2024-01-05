@@ -1,8 +1,8 @@
 function Home() {
   return (
-    <div className=" grid md:grid-cols-2 md:items-center gap-14 md:align-middle md:justify-stretch sm:my-1">
+    <div className="  grid md:grid-cols-2 md:items-center gap-14 md:align-middle md:justify-stretch sm:my-1">
         {/*<* style={{ backgroundImage: "url(/molino.jpg)" }} className="text-center w-auto text-4xl sm:py-8 lg:py-12">*/}
-          <div className="size-92 md:items-center">
+          <div className="size-92 mt-2 md:items-center">
           <img src="/molino.jpg" alt="" className=" h-auto rounded-lg size-auto md:object-center "/>
           </div>
           <div className="size-auto">

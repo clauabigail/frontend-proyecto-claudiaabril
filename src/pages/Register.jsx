@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { Toaster, toast } from 'sonner'
 import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
@@ -52,20 +52,20 @@ const Register = () => {
   }
 
   return (
-    <div className=" h-auto w-full grid md:grid-cols-2 md:items-center gap-10 md:justify-center">
-      <div>
+    <div className="  border-t border-white h-auto w-full grid md:grid-cols-2 md:items-center gap-10 md:justify-center">
+      <div className="mt-2">
         <img src="./molino.jpg" alt="" />
       </div>
       <form className="w-96 mx-auto mt-10 mb-10" onSubmit={handleRegister}>
-        <h1 className="text-center text-3xl mb-8 text-white">Catalogo App - Register</h1>
-
+        <h1 className="text-center text-3xl mb-8 text-white">Catálogo App - Register</h1>
+        <Toaster richColors />
         {/*<pre>{JSON.stringify(form, null, 2)}</pre>*/}
 
         <div className="flex flex-col gap-4 bg-slate-200 p-8 shadow-lg rounded-lg text-black">
           <label className="font-medium">
             Full name
             <input
-              type="text"
+              type="email"
               name="fullname"
               placeholder="Juan Perez"
               className="border w-full p-3"
@@ -91,7 +91,7 @@ const Register = () => {
             <input
               type="password"
               name="password"
-              placeholder="pass"
+              placeholder="password"
               className="border w-full p-3"
               required
               onChange={handleChange}
