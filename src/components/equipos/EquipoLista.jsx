@@ -6,11 +6,14 @@ import { Link } from "react-router-dom";
 const EquipoLista = ({equipos}) => {
     return (
       <main className=" flex flex-col grid-cols-3 gap-4">
+        <div>
+          <img src="./images/379-AirCoolerPipingAssembly-mainComponent.jpg" alt="equipo Principal" className="h-auto rounded-lg w-full md:object-center" />
+        </div>
         
         <div className="">
          
   
-                <div className="font-bold flex justify-between bg-black text-yellow-50 inset-x-2 top-6 z-50 ml-4">
+                <div className="md:font-bold flex md:justify-between text-yellow-50 inset-x-2 top-4 z-50 ml-2 align-middle gap-2">
                   <span>Id</span>
                   <span>Descripcion</span>
                   <span>Criticidad</span>
@@ -24,23 +27,23 @@ const EquipoLista = ({equipos}) => {
   
         {equipos && equipos.map(equipo => {
           return (
-            <div className="">
+            <div className=" font-light">
   
            <article
-              className="border-t border-white font-thin rounded-lg flex justify-between text-white items-center justify-items-center gap-2"
+              className="border-t font-thin border-white rounded-lg flex  text-white md:justify-between items-center md:justify-items-center gap-2"
               key={equipo.id}
               >       
               
-                <div className="w-20">
-                  <span className="text-slate-400">#</span>
-                  <span className="font-extrabold uppercase">{equipo.Id}</span>
+                <div className=" ">
+                  <span className="text-slate-400 font-thin">ID </span>
+                  <span className="w-1/5 md:font-extrabold font-thin uppercase md:justify-between items-center md:justify-items-center ">{equipo.Id}</span>
                 </div>
-                <div className="w-44 font-semibold">{equipo.descripcion}</div>
-                <div className="w-44 font-semibold">{equipo.criticidad}</div>
-                <div className="w-44 font-extrabold">
+                <div className="w-1/5 md:font-semibold font-thin lowercase md:normal-case md:justify-between items-center md:justify-items-center">{equipo.descripcion}</div>
+                <div className="w-1/5 md:font-semibold font-thin md:justify-between items-center md:justify-items-center">{equipo.criticidad}</div>
+                <div className="w-1/5 md:font-semibold font-thin md:justify-between items-center md:justify-items-center">
                   ${equipo.costoUni}
                 </div>
-                <div>
+                <div className="w-1/5">
                   {equipo.criticidad === 'Baja'
                     && <BaseTag label={equipos.criticidad} bgColor='bg-green-300' dotColor='text-emerald-400'  />
                   }
