@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import { fetchEquipos } from "../services/equipos"
-import EquipoLista from "../components/equipos/equipoLista"
+import EquipoLista from "../components/equipos/EquipoLista"
 const ActualizarEquipo = () => {
   const [equipos, setEquipos] = useState([])
 
